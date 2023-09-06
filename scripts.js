@@ -34,3 +34,20 @@ const array3 = temperatures.concat(secondTemperatures);
 
 const amplitude2 = calcTemAmplitude(array3);
 console.log('second amplitude: ' + amplitude2);
+
+// ---
+
+const measureKelvin = function () {
+  const measurement = {
+    type: 'temp',
+    unit: 'celsius',
+    value: Number(prompt('Degree celsius:')),
+  };
+  const kelvin = measurement.value + 273;
+  return kelvin;
+};
+
+console.log(measureKelvin());
+// console.warn(measureKelvin());
+// console.error(measureKelvin());
+// console.table(); another way to show objects into console
